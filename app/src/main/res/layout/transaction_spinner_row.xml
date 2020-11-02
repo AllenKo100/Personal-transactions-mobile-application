@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_view_transaction"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:src="@drawable/desno" />
+
+    <TextView
+        android:id="@+id/text_view_transaction"
+        android:layout_width="163dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/image_view_transaction"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_toEndOf="@+id/image_view_transaction"
+        android:gravity="center"
+        android:text="TipTransakcije"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

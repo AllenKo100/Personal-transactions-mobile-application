@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraphsFragment">
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="669dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="46dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bargraph1"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"></com.github.mikephil.charting.charts.BarChart>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bargraph2"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"></com.github.mikephil.charting.charts.BarChart>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bargraph3"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"></com.github.mikephil.charting.charts.BarChart>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/monthOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Month" />
+
+            <Button
+                android:id="@+id/weekOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Week" />
+
+            <Button
+                android:id="@+id/dayOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Day" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
